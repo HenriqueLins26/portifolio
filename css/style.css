@@ -21,11 +21,6 @@ body{
     background-color: #eaeef1;
 }
 
-main {
-    background-color: #fff;
-    padding: 20px;
-
-}
 a{
     text-decoration: none;
     color: #fff;
@@ -33,8 +28,43 @@ a{
 
 section{
     padding: 10px;
-    margin: 100px 20px 100px 20px;
+    margin: 100px 0px 100px 0px;
 }
+
+/* Pagina Contato */
+
+
+#formulario{  
+    height: 600px;
+    padding: 10px;
+    background-image: url('../image/fundo_contato.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+
+
+#formulario > h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.formu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+
+}
+
+
+/* Fim da pagina Contato */
 
 
 /* Inicio do menu*/
@@ -110,8 +140,9 @@ footer a:hover{
 /* Icones do rodapé*/
 .icon{
     width: 20px;
+    margin-top: -5px;
     margin-right: 6px;
-    vertical-align: bottom;
+    vertical-align: middle;
 
 }
 /* Fim do rodapé */
