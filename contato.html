@@ -23,42 +23,44 @@
         
     </header>
 
-    <main>
+    <main class="topo" class>
         <h1>Entre em contato</h1>
-        <section>
+        <section class="cont-topo">
             <h2>Vamos conversar</h2>
             <p>Caso queira saber mais sobre meus projetos, minha formação ou entrar em contato para oportunidades na área de tecnologia, fique à vontade para enviar uma mensagem.</p>
         </section>
 
         <section id="formulario">
             <h2>Formulário de contato</h2>
-            <form action="vb" method="post" class="formu">
+            <form action="#" method="post" class="formu">
                 
-                <p>
+                <div class="campo">
                     <label for="inome">Nome</label>
-                    <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required placeholder="Nome Completo" size="30">
-                </p>
+                    <input type="text" name="nome" id="inome" minlength="5" required placeholder="Nome Completo" size="30">
+                </div>
 
-                <p>
-                    <label for="iemail">E-mail:</label>
+                <div class="campo">
+                    <label for="iemail">E-mail</label>
                     <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="fulano@gmail.com" size="30">
-                </p>
+                </div>
 
-                <p>
-                    <label for="imsg">Mensagem: </label><br>
+                <div class="campo">
+                    <label for="imsg">Mensagem</label><br>
                     <textarea name="msg" id="imsg" cols="50" rows="15" placeholder="Digite aqui..." required></textarea>
-                </p>
+                </div>
 
-                <p><input type="submit" value="Enviar"></p>
+                <div class="btn_con"><input type="submit" value="Enviar"></div>
             </form>
         </section>
 
-        <section>
+        <section class="icon-cont">
             <h2>Minhas redes</h2>
             <p>Você também pode acompanhar meus projetos e minha evolução profissional através das minhas redes.</p>
-            <p><a href="https://github.com/HenriqueLins26" target="_blank" rel="noopener">GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/henrique-lins-04561a300/" target="_blank" rel="noopener">LinkedIn</a></p>
-            <p><a href="#" target="_blank">Email</a></p>
+            <ul>
+                <li><a href="https://github.com/HenriqueLins26" target="_blank" rel="noopener"><img src="icones/github.png" alt=""> GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/henrique-lins-04561a300/" target="_blank" rel="noopener"><img src="icones/linkedin.png" alt=""> LinkedIn</a></li>
+                <li><a href="#" target="_blank"><img src="icones/envelope.png" alt=""> Email</a></li>
+            </ul>
         </section>
     </main>
 

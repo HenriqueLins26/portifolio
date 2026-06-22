@@ -31,42 +31,6 @@ section{
     margin: 100px 0px 100px 0px;
 }
 
-/* Pagina Contato */
-
-
-#formulario{  
-    height: 600px;
-    padding: 10px;
-    background-image: url('../image/fundo_contato.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-    position: relative;
-}
-
-
-#formulario > h2 {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.formu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-    transform: translate(-50%, -50%);
-
-}
-
-
-/* Fim da pagina Contato */
-
-
 /* Inicio do menu*/
 header{
     width: 100%;
@@ -112,9 +76,142 @@ nav a:hover{
 
 /* Fim do menu*/
 
+/* Pagina Contato */
+
+.topo > h1{
+    margin: auto;
+    background-color: #3A506B;
+    width: 350px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-radius: 0px 0px  20px 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+ .cont-topo{
+    text-align: center;
+ }
+
+ .cont-topo h2 {
+    font-size: 30px;
+ }
+
+ .cont-topo p{
+    font-size: 18px;
+ }
+
+
+
+#formulario{  
+    height: 600px;
+    padding: 10px;
+    background-image: url('../image/pawel-czerwinski-JycBD2jrOb8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    color: #fff;
+    position: relative;
+}
+
+#formulario > h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.formu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+
+}
+
+.campo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.campo > input {
+    width: 300px;
+    height: 25px;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #9c9c9c;
+    padding: 2px 0px 0px 5px;
+    margin-bottom: 10px;
+    
+}
+
+.campo > textarea{
+    resize: none;
+    border: none;
+    padding: 5px;
+    width: 400px;
+    height: 200px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn_con{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn_con input {
+    font-size: 18px;
+    color: #fff;
+    width: 70px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: #60A5FA;
+}
+
+.btn_con input:hover {
+    padding: 9px;
+    border: 1px solid white;
+    background-color: #4679b6;
+}
+
+.icon-cont li{
+    margin-bottom: 20px;
+}
+
+.icon-cont img {
+    width: 40px;
+    vertical-align: bottom;
+}
+
+.icon-cont h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.icon-cont p {
+    margin-bottom: 25px;
+}
+.icon-cont a {
+    font-size: 20px;
+    color: #000;
+    font-weight: 900;
+
+}
+
+.icon-cont{
+    text-align: center;
+}
+
+/* Fim da pagina Contato */
 
 /* Rodapé*/
 footer{
+    width: 100%;
     height: 35px;
     background-color: #0F172A;
     color: #fff;
@@ -123,6 +220,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 300;
 }
 
 footer a{
@@ -143,11 +241,8 @@ footer a:hover{
     margin-top: -5px;
     margin-right: 6px;
     vertical-align: middle;
-
 }
 /* Fim do rodapé */
-
-
 
  /* Catalago das cores
     #1F3A93
