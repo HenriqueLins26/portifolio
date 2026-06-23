@@ -1,6 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
+ /* Catalago das cores
+    #1F3A93
+    #60A5FA
+    #3A506B
+    #6C757D
+    #C9D6DF
+    #0F172A
+*/
 /* Definção das paginas*/
 *{
     margin: 0;
@@ -37,6 +44,7 @@ header{
     background-color: #3A506B;
     padding: 20px 0px;
     color: #fff;
+    border-bottom: 2px solid #6C757D;
     
 }
 
@@ -76,15 +84,46 @@ nav a:hover{
 
 /* Fim do menu*/
 
+/* Inicio da pagina Formação */
+
+.formacao {
+    text-align: center;
+}
+
+.facul{
+    margin-top: 30px;
+    display: flex;
+    text-align: justify;
+}
+.meio{
+    border-right: 2px solid #3A506B;
+}
+.facul1{
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+}
+/* Fim da pagina Formação */
+
 /* Inicio da pagina Portifolio */
 
 .princ{
     text-align: center;
 }
 
+.princ h2{
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.princ p{
+    font-size: 18px;
+}
+
+
 .card-por{
     color: #fff;
-
     height: 350px;
     display: flex;
     margin: 40px;
@@ -101,10 +140,30 @@ nav a:hover{
 
 .cards h3{
     margin: 10px;
+    font-size: 25px;
+    font-weight: 400;
 }
 .cards p{
     text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
     padding: 8px;
+}
+
+.port{
+    font-size: 20px;
+    margin-top: 40px;
+    
+    
+}
+
+.port > a{
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.port a:hover {
+    text-decoration: none;
 }
 
 /* Fim da Pagina Portifolio */
@@ -112,13 +171,12 @@ nav a:hover{
 /* Pagina Contato */
 
 .topo > h1{
-    margin: auto;
     padding-top: 25px;
     color: #000000;
     text-align: center;
     border-radius: 0px 0px  20px 20px;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 600;
 }
  .cont-topo{
     text-align: center;
@@ -126,6 +184,7 @@ nav a:hover{
 
  .cont-topo h2 {
     font-size: 30px;
+    font-weight: 500;
  }
 
  .cont-topo p{
@@ -136,7 +195,6 @@ nav a:hover{
 
 #formulario{  
     height: 600px;
-
     background-image: url('../image/pawel-czerwinski-JycBD2jrOb8-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -219,8 +277,8 @@ nav a:hover{
 }
 
 .icon-cont h2 {
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -230,7 +288,7 @@ nav a:hover{
 .icon-cont a {
     font-size: 20px;
     color: #000;
-    font-weight: 900;
+    font-weight: 700;
 
 }
 
@@ -242,7 +300,6 @@ nav a:hover{
 
 /* Rodapé*/
 footer{
-
     height: 35px;
     background-color: #0F172A;
     color: #fff;
@@ -252,6 +309,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-weight: 300;
+    border-top: 2px solid #6C757D;
 }
 
 footer a{
@@ -274,12 +332,3 @@ footer a:hover{
     vertical-align: middle;
 }
 /* Fim do rodapé */
-
- /* Catalago das cores
-    #1F3A93
-    #60A5FA
-    #3A506B
-    #6C757D
-    #C9D6DF
-    #0F172A
-*/
