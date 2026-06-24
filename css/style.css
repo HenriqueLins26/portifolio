@@ -1,13 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
- /* Catalago das cores
-    #1F3A93
-    #60A5FA
-    #3A506B
-    #6C757D
-    #C9D6DF
-    #0F172A
-*/
+
 /* Definção das paginas*/
 *{
     margin: 0;
@@ -16,21 +9,50 @@
 }
 
 :root {
+    --cor0: #FFF;
+    --cor1: #0F172A;
+    --cor2: #1F3A93;
+    --cor3: #6C757D;
+    --cor4: #60A5FA;
+    --cor5: #3A506B;
+    --cor6: #C9D6DF;
+
+
     --font-tit: 'Josefin Sans';
     --font-prg: 'Inter';
 }
 
-p{
-    font-family: var(--font-prg);
-}
+
 
 body{
     background-color: #eaeef1;
 }
+h1 {
+    font-size: 50px;
+    padding-top: 25px;
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p{
+    font-weight: 300;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: var(--font-prg);
+}
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--cor0);
 }
 
 section{
@@ -43,10 +65,10 @@ section{
 header{
     width: 100%;
     height: 80px;
-    background-color: #3A506B;
+    background-color: var(--cor5);
     padding: 20px 0px;
-    color: #fff;
-    border-bottom: 2px solid #6C757D;
+    color: var(--cor0);
+    border-bottom: 2px solid var(--cor3);
 }
 
 .menu span{
@@ -66,6 +88,8 @@ nav{
 }
 
 nav > a{
+    text-decoration: none;
+    color: var(--cor0);
     padding: 10px;
     font-weight: 600;
     font-size: 16px;
@@ -75,15 +99,101 @@ nav a:hover{
     padding: 10px;
     background-color: #c9d6df71;
     border-radius: 10px 10px 0px 0px;
-    color: #fff;
+    color: var(--cor0);
 }
  nav a.ativo{
     background-color: #c9d6df71;
     border-radius: 10px 10px 0px 0px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--cor0);
  }
 
 /* Fim do menu*/
+
+/* Inicio da pagina Home*/
+.perfil{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ft-perfil{
+    margin: 15px;
+}
+
+.ft-perfil > img {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    box-shadow: -5px 5px 13px var(--cor1);
+}
+
+.descri{
+    margin: auto;
+    text-align: center;
+    width: 900px;
+}
+
+.descri > p{
+    padding: 30px;
+    text-align: justify;
+}
+
+.cards-des {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.des {
+    border: 2px solid var(--cor6);
+    background-image: linear-gradient(200deg, var(--cor1), var(--cor5), var(--cor1), var(--cor5));
+    color: var(--cor0);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--cor1);
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+
+.descricao {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.descricao > p {
+    padding-bottom: 40px;
+    text-align: justify;
+}
+
+.descricao > a {
+    text-decoration: underline;
+    color: #000;
+    padding: 10px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.descricao > a:hover {
+    text-decoration: none;
+}
+
+.descricao .btn-home{
+    margin-left: 10px;
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.descricao .btn-home:hover {
+    background-color: #2a4cb9;
+}
+/* Fim da pagina Home */
 
 /* Inicio da pagina Sobre */
 
@@ -138,14 +248,17 @@ nav a:hover{
 .facul{
     margin-top: 30px;
     display: flex;
+    justify-content: center;
     text-align: justify;
+    flex-wrap: wrap;
 }
 .meio{
-    border-right: 2px solid #3A506B;
+    border-right: 2px solid var(--cor5);
 
 }
 .facul1{
-    height: 150px;
+    width: 700px;
+    height: 200px;
     padding: 10px;
     margin: 20px;
 }
@@ -158,14 +271,14 @@ nav a:hover{
 }
 
 .forma{
-    background-image: linear-gradient(150deg,#0F172A,#3A506B, #0F172A);
-    color: white;
-    border: 2px solid #C9D6DF;
-    box-shadow: -4px 4px 15px #0F172A;
+    background-image: linear-gradient(150deg,var(--cor1),var(--cor5), var(--cor1));
+    color: var(--cor0);
+    border: 2px solid var(--cor6);
+    box-shadow: -4px 4px 15px var(--cor1);
     border-radius: 15%;
     padding: 15px;
     width: 450px;
-    height: 200px;
+    height: 250px;
     margin: 10px;
 }
 .forma > h3{
@@ -187,8 +300,8 @@ nav a:hover{
 }
 
 .card-f{
-    box-shadow: -4px 4px 10px #0F172A;
-    border: 2px solid #3A506B;
+    box-shadow: -4px 4px 10px var(--cor1);
+    border: 2px solid var(--cor5);
     border-radius: 10px;
     margin: 10px;
     width: 400px;
@@ -204,28 +317,19 @@ nav a:hover{
 .card-f > p{
     text-align: justify;
 }
-
 /* Fim da pagina Formação */
 
 /* Inicio da pagina Portifolio */
-
 .princ{
     text-align: center;
 }
 
-.princ h2{
-    padding-bottom: 10px;
-    font-size: 30px;
-    font-weight: 400;
-}
-
 .princ p{
-    font-size: 18px;
+    text-align: center;
 }
-
 
 .card-por{
-    color: #fff;
+    color: var(--cor0);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -233,12 +337,12 @@ nav a:hover{
 }
 
 .cards{
-    background-image: linear-gradient(200deg, #0F172A, #3A506B);
+    background-image: linear-gradient(200deg, var(--cor1), var(--cor5));
     border-radius: 40px;
     width: 500px;
-    height: 350px;
-    border: 1px solid #C9D6DF;
-    box-shadow: -8px 8px 15px #0F172A;
+    height: 300px;
+    border: 1px solid var(--cor6);
+    box-shadow: -8px 8px 15px var(--cor1);
     margin: 10px;
     padding: 10px;
 }
@@ -248,11 +352,9 @@ nav a:hover{
     font-size: 25px;
     font-weight: 400;
 }
-.cards p{
+
+.cards p {
     text-align: justify;
-    font-size: 18px;
-    font-weight: 300;
-    padding-top: 8px;
 }
 
 .port{
@@ -268,29 +370,15 @@ nav a:hover{
 .port a:hover {
     text-decoration: none;
 }
-
 /* Fim da Pagina Portifolio */
 
 /* Pagina Contato */
-
-.topo > h1{
-    padding-top: 25px;
-    color: #000000;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 600;
-}
  .cont-topo{
     text-align: center;
  }
 
- .cont-topo h2 {
-    font-size: 30px;
-    font-weight: 500;
- }
-
  .cont-topo p{
-    font-size: 18px;
+    text-align: center;
  }
 
 #formulario{  
@@ -300,7 +388,7 @@ nav a:hover{
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-    color: #fff;
+    color: var(--cor0);
     position: relative;
 }
 
@@ -327,7 +415,7 @@ nav a:hover{
 .campo > input {
     width: 300px;
     height: 25px;
-    background-color: #ffffff;
+    background-color: var(--cor0);
     border: none;
     border-bottom: 2px solid #9c9c9c;
     padding: 2px 0px 0px 5px;
@@ -351,17 +439,17 @@ nav a:hover{
 
 .btn_con input {
     font-size: 18px;
-    color: #fff;
+    color: var(--cor0);
     width: 70px;
     padding: 8px;
     border-radius: 15px;
-    border: 2px solid white;
-    background-color: #60A5FA;
+    border: 2px solid var(--cor0);
+    background-color: var(--cor4);
 }
 
 .btn_con input:hover {
     padding: 9px;
-    border: 1px solid white;
+    border: 1px solid var(--cor0);
     background-color: #4679b6;
 }
 
@@ -383,6 +471,7 @@ nav a:hover{
 
 .icon-cont p {
     margin-bottom: 25px;
+    text-align: center;
 }
 .icon-cont a {
     font-size: 20px;
@@ -393,27 +482,26 @@ nav a:hover{
 .icon-cont{
     text-align: center;
 }
-
 /* Fim da pagina Contato */
 
 /* Rodapé*/
 footer{
+    background-color: var(--cor1);
+    color: var(--cor0);
+    border-top: 2px solid var(--cor3);
     height: 35px;
-    background-color: #0F172A;
-    color: #fff;
-    text-align: center;
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    border-top: 2px solid #6C757D;
 }
 
 footer a{
-    color: #fff;
+    color: var(--cor0);
     padding: 0px 8px;
+}
 
+footer p {
+    font-family: var(--font-tit);
 }
 
 footer a:hover{
@@ -425,8 +513,7 @@ footer a:hover{
 /* Icones do rodapé*/
 .icon{
     width: 20px;
-    margin-top: -5px;
-    margin-right: 6px;
+    margin: -5px 6px 0px 0px;
     vertical-align: middle;
 }
 /* Fim do rodapé */
