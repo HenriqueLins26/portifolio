@@ -2,15 +2,9 @@
 
 @media screen and (max-width: 768px){
     /* Definçaõ da pagina*/
-
     :root {
-        --cor0: #FFF;
         --cor1: #0F172A;
-        --cor2: #1F3A93;
-        --cor3: #6C757D;
-        --cor4: #60A5FA;
         --cor5: #3A506B;
-        --cor6: #C9D6DF;
     }
 
     h1{
@@ -85,11 +79,12 @@
     /* Pagina Formação */
     .facul{
         flex-direction: column;
+        
     }
 
     .facul1{
-        width: 370px;
-        height: 300px;
+        width: 100%;
+        height: 270px;
         margin: 20px 0px 0px 0px;
         padding: 0px;
     }
@@ -110,6 +105,7 @@
     .forma > h3{
         margin: 10px;
         font-size: 20px;
+        font-weight: 400;
     }
 
     .card-for {
@@ -122,5 +118,99 @@
         margin: 10px auto;
     }
     /* Pagina Formação */
+
+    /* Pagina Portifolio */
+
+    .princ{
+        padding: 0px;
+    }
+
+    .princ p{
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .card-por{
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .cards{
+        width: 340px;
+        height: 320px;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .cards h3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    /* Pagina Portifolio */
+
+    /* Pagina Contato */
+    #formulario{
+        width:100%;
+        height: 600px;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+
+    #formulario > h2 {
+        margin: 0px;
+    }
+
+    .campo {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .campo > input{
+        width: 230px;
+        height: 20px;
+        padding: 5px 0px 0px 5px;
+        font-size: 15px;
+    }
+
+    .campo > textarea {
+        width: 320px;
+        height: 150px;
+        font-size: 15px;
+    }
+    .icon-cont li{
+        width: 115px;
+    }
+
+    .icon-cont img {
+        width: 30px;
+    }
+
+    .icon-cont a {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    /* Pagina Contato */
+
+    /* Pagina Rodapé */
+    footer{
+        height: 60px;
+        padding: 10px;
+    }
+
+    footer a{
+        padding: 0px 2px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+    .icon{
+        margin: 5px 6px 0px 0px;
+        vertical-align: bottom;
+        width: 16px;
+    }
+    /* Pagina Rodapé */
 
 }

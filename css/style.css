@@ -3,6 +3,7 @@
 
 /* Definção das paginas*/
 *{
+  
     margin: 0;
     padding: 0;
     font-family: var(--font-tit);
@@ -25,6 +26,7 @@
 
 body{
     background-color: #eaeef1;
+
 }
 h1 {
 
@@ -241,6 +243,7 @@ nav a:hover{
 }
 
 .facul{
+    width: 100%;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -409,22 +412,23 @@ nav a:hover{
 }
 
 .campo > input {
+    font-size: 16px;
     width: 300px;
     height: 25px;
     background-color: var(--cor0);
     border: none;
     border-bottom: 2px solid #9c9c9c;
-    padding: 2px 0px 0px 5px;
+    padding: 5px 0px 0px 5px;
     margin-bottom: 10px;
 }
 
 .campo > textarea{
     resize: none;
     border: none;
-    padding: 5px;
+    padding: 8px;
     width: 400px;
     height: 200px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -450,16 +454,20 @@ nav a:hover{
 }
 
 .icon-cont li{
+    width: 150px;
+    margin: auto;
     margin-bottom: 20px;
     list-style: none;
 }
 
 .icon-cont img {
     width: 40px;
-    vertical-align: bottom;
+    border-radius: 20px;
+    vertical-align: middle;
 }
 
 .icon-cont h2 {
+    text-align: center;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -475,9 +483,6 @@ nav a:hover{
     font-weight: 700;
 }
 
-.icon-cont{
-    text-align: center;
-}
 /* Fim da pagina Contato */
 
 /* Rodapé*/
@@ -502,7 +507,6 @@ footer p {
 
 footer a:hover{
     background-color: #c9d6df23;
-    
     border-radius: 5px;
 }
 
