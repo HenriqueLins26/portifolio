@@ -14,14 +14,8 @@
     }
 }
 
-
 @media screen and (max-width: 768px){
     /* Definçaõ da pagina*/
-    :root {
-        --cor1: #0F172A;
-        --cor5: #3A506B;
-    }
-
     h1{
         padding-top: 10px;
         font-size: 33px;
@@ -39,6 +33,60 @@
     .meio{
         border-right: none;
     }
+
+    /* Menu */
+    header{
+        padding: 0px 0px 20px 0px;
+        height: auto;
+
+    }
+
+    nav a.ativo{
+        background-color: #c9d6df38;
+    }
+
+    #menu-btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: var(--cor0);
+    }
+
+    #menu{
+        margin-top: 20px;
+        border-top: 2px solid var(--cor3);
+        display: none;
+        flex-direction: column;
+        background-color: var(--cor5);
+        width: 100%;
+        }
+
+    #menu a{
+        border-radius: 0;
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* quando o javascript ativar */
+    #menu.ativo{
+        display: flex;
+    }
+
+    .menu span{
+        margin-left: 0px;
+        font-size: 30px;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
+    /* Menu */
 
     /* Pagina Home*/
     .perfil{

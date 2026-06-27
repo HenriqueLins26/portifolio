@@ -15,13 +15,16 @@
             <p><img src="favicon/terminal.png" alt="Logo terminal" class="logo"><span>Henrique Lins</span> </p>
         </div>
         <!-- Menu principal responsável pela navegação entre as páginas -->
-        <nav>
+
+        <button id="menu-btn">☰</button>
+
+        <nav id="menu">
             <a href="index.html">Home</a>
             <a href="sobre.html">Sobre mim</a>
             <a href="formacao.html">Formação</a>
             <a href="portfolio.html">Portfólio</a>
             <a href="contato.html" class="ativo">Contato</a>
-            <button>Mudar tema</button>
+            <button id="tema">Mudar tema</button>
         </nav>
     </header>
 
@@ -37,7 +40,7 @@
         <!-- Formulário para envio de mensagens -->
         <section id="formulario">
             <h2>Formulário de contato</h2>
-            <form action="#" method="post" class="formu">
+            <form action="#" method="post" class="formu" id="meuFormulario">
                 
                 <div class="campo">
                     <label for="inome">Nome</label>
