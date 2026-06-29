@@ -1,9 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-/* Definção das paginas*/
+/* Inicio da definção da pagina */
 *{
-  
     margin: 0;
     padding: 0;
     font-family: var(--font-tit);
@@ -24,10 +23,9 @@
 
 body{
     background-color: #eaeef1;
-
 }
-h1 {
 
+h1 {
     padding-top: 25px;
     color: #000000;
     text-align: center;
@@ -58,14 +56,15 @@ section{
     padding: 10px;
     margin: 50px 0px 50px 0px;
 }
+/* Fim da definção da pagina */
 
-/* Inicio do menu*/
 
+/* Inicio do Menu */
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: var(--cor5);
-    padding: 20px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
     color: var(--cor0);
     border-bottom: 2px solid var(--cor3);
 }
@@ -100,18 +99,18 @@ nav > a{
 }
 
 nav a:hover{
-    padding: 10px;
     background-color: #c9d6df71;
     border-radius: 10px 10px 0px 0px;
     color: var(--cor0);
 }
+
  nav a.ativo{
     background-color: #c9d6df71;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 2px solid var(--cor6);
  }
 
-/* Estilo Base do Botão de Tema */
+/* Estilo base do Botão de Tema */
 #tema {
     background-color: var(--cor4); 
     color: var(--cor0);          
@@ -131,8 +130,8 @@ nav a:hover{
     background-color: transparent;
     border-color: var(--cor4);
 }
-
 /* Fim do menu*/
+
 
 /* Inicio da pagina Home*/
 .perfil{
@@ -221,8 +220,8 @@ nav a:hover{
 }
 /* Fim da pagina Home */
 
-/* Inicio da pagina Sobre */
 
+/* Inicio da pagina Sobre */
 .sobre {
     text-align: center;
 }
@@ -255,17 +254,15 @@ nav a:hover{
     width: 450px;
     height: 150px;
     padding: 20px;
-
 }
 
 .card-sob > h3 {
     margin-bottom: 10px;
 }
-
 /* Fim da pagina Sobre */
 
-/* Inicio da pagina Formação */
 
+/* Inicio da pagina Formação */
 .formacao {
     text-align: center;
 }
@@ -278,10 +275,11 @@ nav a:hover{
     text-align: justify;
     flex-wrap: wrap;
 }
+
 .meio{
     border-right: 2px solid var(--cor5);
-
 }
+
 .facul1{
     width: 700px;
     height: 200px;
@@ -307,6 +305,7 @@ nav a:hover{
     height: 250px;
     margin: 10px;
 }
+
 .forma > h3{
     text-align: center;
     margin: 5px;
@@ -345,7 +344,8 @@ nav a:hover{
 }
 /* Fim da pagina Formação */
 
-/* Inicio da pagina Portifolio */
+
+/* Inicio da pagina Portfolio */
 .princ{
     text-align: center;
     padding: 30px;
@@ -397,9 +397,10 @@ nav a:hover{
 .port a:hover {
     text-decoration: none;
 }
-/* Fim da Pagina Portifolio */
+/* Fim da pagina Portfolio */
 
-/* Pagina Contato */
+
+/* Inicio da pagina Contato */
  .cont-topo{
     text-align: center;
  }
@@ -514,10 +515,10 @@ nav a:hover{
     color: #000;
     font-weight: 700;
 }
-
 /* Fim da pagina Contato */
 
-/* Rodapé*/
+
+/* Inicio do Rodapé*/
 footer{
     background-color: var(--cor1);
     color: var(--cor0);
@@ -550,15 +551,14 @@ footer a:hover{
 }
 /* Fim do rodapé */
 
-/* Configuração do tema escuro */
 
-/* Quando o body tiver a classe .dark-theme, estas cores serão aplicadas */
+/* Configuração do tema escuro */
+/* Inicio da definção da pagina */
 body.dark-theme {
     background-color: #121214; 
     color: #e1e1e6;
 }
 
-/* Ajuste dos títulos no modo escuro */
 body.dark-theme h1 {
     color: var(--cor0);
 }
@@ -566,33 +566,42 @@ body.dark-theme h1 {
 body.dark-theme h2 {
     color: var(--cor4);
 }
+/* Fim da definção da pagina */
 
-/* Ajuste dos links e textos específicos na Home */
-body.dark-theme .descricao > a {
-    color: var(--cor4); 
+
+/* Inicio do Menu */
+body.dark-theme #tema {
+    box-shadow: 0 0 8px var(--cor4);   
 }
+/* Fim do Menu */
 
-body.dark-theme .icon-cont a {
+
+/* Inicio da pagina Home */
+body.dark-theme .descricao > a{
     color: var(--cor0);
 }
+/* Fim da pagina Home  */
 
-/* Ajuste de cards que precisam mudar de cor no modo escuro */
+
+/* Inicio da pagina Sobre */
+body.dark-theme .card-sob {
+    border-color: var(--cor4);
+    color: var(--cor0);
+}
+/* Fim da pagina Sobre */
+
+
+/* Inicio da pagina Formação */
 body.dark-theme .card-f {
     background-color: #1f2937;
     border-color: var(--cor0);
     color: var(--cor0);
 }
+/* Fim da pagina Formação */
 
-body.dark-theme .card-sob {
-    border-color: var(--cor4);
-    color: var(--cor0);
-}
 
-body.dark-theme .descricao .btn-home{
-    color: var(--cor0);
-}
-
-body.dark-theme .descricao > a{
+/* Inicio da pagina Contato */
+body.dark-theme .icon-cont a {
     color: var(--cor0);
 }
 
@@ -612,8 +621,4 @@ body.dark-theme .img-claro {
 body.dark-theme .img-escuro {
     display: inline-block;
 }
-
-body.dark-theme #tema {
-    box-shadow: 0 0 8px var(--cor4); 
-    
-}
+/* Fim da pagina Contato */

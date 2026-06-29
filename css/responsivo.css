@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Configurações responsiva para tablet */
 @media screen and (min-width: 769px) and (max-width: 1024px){
     .meio{
         border: none;
@@ -14,16 +15,10 @@
     }
 }
 
+/* Configurações responsiva para celular */
 @media screen and (max-width: 768px){
 
-    /* Definçaõ da pagina*/
-    #tema {
-        display: block;
-        width: 30%;
-        margin: 20px auto 0px auto;
-        text-align: center;
-        padding: 12px 0px; 
-    }
+    /* Inicio da definção da pagina */
     h1{
         padding-top: 10px;
         font-size: 33px;
@@ -41,10 +36,12 @@
     .meio{
         border-right: none;
     }
+    /* Fim da definção da pagina */
 
-    /* Menu */
+
+    /* Inicio do Menu responsivo */
     header{
-        padding: 0px 0px 20px 0px;
+        padding-bottom: 20px;
         height: auto;
     }
 
@@ -70,7 +67,7 @@
         flex-direction: column;
         background-color: var(--cor5);
         width: 100%;
-        }
+    }
 
     #menu a{
         border-radius: 0;
@@ -92,9 +89,18 @@
     .logo {
         margin-left: 15px;
     }
-    /* Menu */
 
-    /* Pagina Home*/
+    #tema {
+        display: block;
+        width: 30%;
+        margin: 10px auto -10px auto;
+        text-align: center;
+        padding: 12px 0px; 
+    }
+    /* Fim do Menu responsivo */
+
+
+    /* Inicio da pagina Home responsivo */
     .perfil{
         flex-direction: column;
         margin-bottom: 30px;
@@ -104,6 +110,7 @@
         width: 180px;
         height: 180px;
     }
+
     .descri{
         margin: 0;
         width: 94%;
@@ -122,9 +129,10 @@
         height: 130px;
         margin: 10px auto;
     }
-    /* Pagina Home*/
+    /* Fim da pagina Home responsivo */
 
-    /* Pagina Sobre*/
+
+    /* Inicio da pagina Sobre responsivo */
     .sob{
         width: 100%;
     }
@@ -144,9 +152,10 @@
         width: 250px;
         margin: 10px auto;
     }
-    /* Pagina Sobre*/
+    /* Fim da pagina Sobre responsivo */
 
-    /* Pagina Formação */
+
+    /* Inicio da pagina Formação responsivo */
     .facul{
         flex-direction: column;
     }
@@ -167,7 +176,7 @@
     }
 
     .forma{
-        background-image: linear-gradient(45deg,var(--cor1),var(--cor5), var(--cor1));
+        background-image: linear-gradient(45deg, var(--cor1), var(--cor5), var(--cor1));
         width: 330px;
         height: 280px;
         padding: 10px;
@@ -190,10 +199,10 @@
         height: 180px;
         margin: 10px auto;
     }
-    /* Pagina Formação */
+    /*  Fim da pagina Formação responsivo */
 
-    /* Pagina Portifolio */
 
+    /* Inicio da pagina Portfolio responsivo */
     .princ{
         padding: 0px;
     }
@@ -219,9 +228,10 @@
         font-size: 20px;
         font-weight: 400;
     }
-    /* Pagina Portifolio */
+    /* Fim da pagina Portfolio responsivo */
 
-    /* Pagina Contato */
+
+    /* Inicio da pagina Contato responsivo */
     #formulario{
         width:100%;
         height: 600px;
@@ -251,6 +261,7 @@
         height: 150px;
         font-size: 15px;
     }
+
     .icon-cont li{
         width: 115px;
     }
@@ -263,9 +274,10 @@
         font-size: 17px;
         font-weight: 700;
     }
-    /* Pagina Contato */
+    /* Fim da pagina Contato responsivo */
 
-    /* Pagina Rodapé */
+
+    /* Inicio do Rodapé responsivo */
     footer{
         height: 75px;
         padding: 10px;
@@ -284,5 +296,5 @@
         vertical-align: middle;
         width: 16px;
     }
-    /* Pagina Rodapé */
+    /* Fim do Rodapé responsivo */
 }
